@@ -1,14 +1,44 @@
 
-Grazioso Salvare Dashboard Project README
-This README provides an overview of the Grazioso Salvare Dashboard, developed as part of the final project for this course. The dashboard is a user-friendly tool designed to help Grazioso Salvare interact with and visualize data from the Austin Animal Center Outcomes database. By incorporating interactive filters, dynamic visualizations, and a geolocation map, this dashboard makes it easy to explore the dataset and gain actionable insights. The project demonstrates the integration of Python, Dash, and MongoDB to create a fully functional and responsive dashboard.
+# Grazioso Salvare Dashboard
 
-Writing clean and organized code helps make programs easy to maintain and adapt. In the CRUD Python module from Project One, I focused on simple, reusable functions like create and read. This made it easy to connect the module to the dashboard in Project Two and ensures the module can be used in other projects that need database operations.
+![Built with](https://img.shields.io/badge/Built%20with-Python%203.10%2B%20%7C%20Dash%20%7C%20Plotly-blue)
+![Database](https://img.shields.io/badge/Database-MongoDB-47a248)
+![Style](https://img.shields.io/badge/Code-Clean%20%26%20Modular-5b5)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-To solve problems effectively, I broke the dashboard project into smaller, manageable tasks. I started by ensuring the CRUD module worked with MongoDB, then built the dashboard components step by step, testing each feature along the way. This approach kept the project manageable and allowed me to address real-world needs, which made the work both challenging and exciting.
+A user-friendly dashboard for **Grazioso Salvare** to explore the **Austin Animal Center Outcomes** dataset.  
+Interactive filters, dynamic visualizations, and a **geo map** help turn raw data into actionable insights.
 
-Building tools like the Grazioso Salvare Dashboard shows the impact of computer science. The dashboard helps the company explore animal data quickly, apply filters, and make informed decisions. It turns raw data into actionable insights, saving time and helping the company focus on its mission. Projects like this highlight how technology can make a real difference.
+> This project demonstrates a clean **CRUD module** (from Project One) integrated with a full **Dash** app (Project Two), backed by **MongoDB**.
 
+[✨ Features](#-features) · [🚀 Quick Start](#-quick-start) · [⚙️ Config](#-configuration) · [🧱 Architecture](#-architecture) · [🗂 Structure](#-project-structure) · [🧪 Tests](#-tests) · [❓FAQ](#-faq)
 
+---
 
+## ✨ Features
 
+- **Interactive filters** (species, age, outcome type, date range, location)
+- **Dynamic charts** (bar/line/pie KPIs: intakes vs outcomes, outcomes by type, breed trends)
+- **Geolocation map** (Plotly map of outcome locations)
+- **Clean CRUD module** (`create`, `read`, `update`, `delete`) reused by the dashboard
+- **Responsive layout** (works on laptop and tablet)
+- **Export** (filtered results to CSV)
 
+---
+
+## 🚀 Quick Start
+
+### Requirements
+- Python **3.10+**
+- MongoDB (Atlas or local)
+
+### 1) Clone & install
+```bash
+git clone https://github.com/YOUR_USER/grazioso-salvare-dashboard.git
+cd grazioso-salvare-dashboard
+python -m venv .venv
+# Windows: .venv\Scripts\Activate.ps1
+# macOS/Linux:
+source .venv/bin/activate
+pip install -r requirements.txt
+2) Configure environment
